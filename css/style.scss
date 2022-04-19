@@ -1,0 +1,117 @@
+body {
+  background: linear-gradient(0.25turn, #3ba9d8, #e067b6);
+  box-sizing: border-box;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+
+/* navbar */
+#nav {
+  background-color: transparent;
+  z-index: 1;
+
+  div {
+    a.hometag {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+
+  #search-form {
+    width: 20rem;
+    height: 2.5rem;
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+
+    #search-input {
+      border-style: none;
+      padding: 10px 0;
+      outline: none;
+      z-index: 1;
+      text-indent: 1.5rem;
+      border-radius: 5px 0 0 5px;
+    }
+
+    #search-submit {
+      background-color: #fff;
+      border-style: none;
+      width: 3.5rem;
+      height: 2.5rem;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  #addBtn {
+    border-radius: 30px;
+
+    #add-favorite {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  #addBtn:hover {
+    background-color: #fff;
+  }
+
+}
+
+/* cards */
+
+#cards .card {
+  height: 37vh;
+
+  .heart-add {
+    color: #fff;
+  }
+}
+
+// modal 
+#modal-show {
+  .modal-content {
+    border: 0;
+
+    .modal-header {
+      background-color: #333;
+
+      #modal-name {
+        margin: 8px 0;
+        color: #fff;
+        font-size: 1.5rem;
+      }
+
+      #close {
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+
+    .modal-footer {
+      background-color: #333;
+
+      .heart {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.active {
+  color: #de435f !important;
+}
+
+.pageBg {
+  background-color: #3571e9 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.card-heart {
+  color: red !important;
+}

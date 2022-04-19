@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake-User</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"
+    defer></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./style.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+    <div class="container">
+      <a class="hometag" href="#">Global Pairing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- search bar -->
+      <form class="d-flex" id="search-form">
+        <input class="d-block w-100" type="search" placeholder="User" aria-label="Search" id="search-input">
+        <button type="submit" id="search-submit"><i class="search-icon  fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <button class="btn" type="submit" id="addBtn"><a href="./favorite.html" id="add-favorite">My
+          favorite</a></button>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <div class="container mt-5" id="main">
+    <div class="row" id="cards">
+      <!-- card -->
+    </div>
+  </div>
+
+  <!-- modal -->
+  <div class="modal fade" id="modal-show" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modal-name">name</h5>
+          <button type="button" id="close" class="btn" data-bs-dismiss="modal" aria-label="Close">X</button>
+        </div>
+        <div class="modal-body text-center">
+          <div id="modal-img">
+          </div>
+          <hr>
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <th scope="row">gender</th>
+                <td id="modal-gender">male</td>
+              </tr>
+              <tr>
+                <th scope="row">birthday</th>
+                <td id="modal-birthday">1995-05-05</td>
+              </tr>
+              <tr>
+                <th scope="row">age</th>
+                <td id="modal-age">25</td>
+              </tr>
+              <tr>
+                <th scope="row">region</th>
+                <td id="modal-region">CH</td>
+              </tr>
+              <tr>
+                <th scope="row">email</th>
+                <td id="modal-email">guillaume.vincent@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <i class="fs-3 fa-solid fa-heart heart" id=""></i>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- pagination -->
+  <div class="container mt-5">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination d-flex justify-content-center" id="paginator">
+
+      </ul>
+    </nav>
+  </div>
+</body>
+
+</html>

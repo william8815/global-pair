@@ -1,0 +1,113 @@
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#3ba9d8), to(#e067b6));
+  background: linear-gradient(0.25turn, #3ba9d8, #e067b6);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* navbar */
+#nav {
+  background-color: transparent;
+  z-index: 1;
+}
+
+#nav div a.hometag {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#nav #search-form {
+  width: 20rem;
+  height: 2.5rem;
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+#nav #search-form #search-input {
+  border-style: none;
+  padding: 10px 0;
+  outline: none;
+  z-index: 1;
+  text-indent: 1.5rem;
+  border-radius: 5px 0 0 5px;
+}
+
+#nav #search-form #search-submit {
+  background-color: #fff;
+  border-style: none;
+  width: 3.5rem;
+  height: 2.5rem;
+  border-radius: 0 5px 5px 0;
+}
+
+#nav #addBtn {
+  border-radius: 30px;
+}
+
+#nav #addBtn #add-favorite {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#nav #addBtn:hover {
+  background-color: #fff;
+}
+
+/* cards */
+#cards .card {
+  height: 37vh;
+}
+
+#cards .card .heart-add {
+  color: #fff;
+}
+
+#modal-show .modal-content {
+  border: 0;
+}
+
+#modal-show .modal-content .modal-header {
+  background-color: #333;
+}
+
+#modal-show .modal-content .modal-header #modal-name {
+  margin: 8px 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#modal-show .modal-content .modal-header #close {
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#modal-show .modal-content .modal-footer {
+  background-color: #333;
+}
+
+#modal-show .modal-content .modal-footer .heart {
+  color: #fff;
+}
+
+.active {
+  color: #de435f !important;
+}
+
+.pageBg {
+  background-color: #3571e9 !important;
+  color: #fff !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.card-heart {
+  color: red !important;
+}
+/*# sourceMappingURL=style.css.map */
